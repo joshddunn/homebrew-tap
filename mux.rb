@@ -5,4 +5,8 @@ class Mux < Formula
   url "https://github.com/joshddunn/mux/releases/download/#{version}/mux"
   desc "Configure tmux sessions"
   homepage "https://github.com/joshddunn/mux"
+
+  def install
+    bin.install "."
+  end
 end
