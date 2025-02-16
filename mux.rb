@@ -7,6 +7,6 @@ class Mux < Formula
   homepage "https://github.com/joshddunn/mux"
 
   def install
-    bin.install "."
+    bin.install "mux"
   end
 end
