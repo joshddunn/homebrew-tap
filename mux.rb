@@ -1,9 +1,8 @@
 class Mux < Formula
   version "v0.1.9"
 
-  url "https://github.com/joshddunn/mux.git",
-    tag: version,
-    revision: "13a4ec0a279ee046760b71b8b334e8a0887d3af6"
+  url "https://github.com/joshddunn/mux/archive/refs/tags/#{version}.tar.gz"
+  sha256 "f4a4c52389ae822e5a9c84d9901c1c38a3c133643ad3f091b7cce4441ba8e001"
   desc "Manage tmux sessions"
   homepage "https://github.com/joshddunn/mux"
 
