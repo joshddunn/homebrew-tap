@@ -1,6 +1,6 @@
 class Mux < Formula
-  version "v0.1.4"
-  sha256 "4495fa25718257698803cb16066048eca5f10e3bb9c2513505d309f6a5c533eb"
+  version "v0.1.5"
+  sha256 "246b59a70d18d3b0d63d7af61e4d720db5684cc90c953f293325160271cb52d7"
 
   url "https://github.com/joshddunn/mux/releases/download/#{version}/mux"
   desc "Manage tmux sessions"
@@ -8,5 +8,6 @@ class Mux < Formula
 
   def install
     bin.install "mux"
+    zsh_completion.install "completion/zsh/_mux" => "_mux"
   end
 end
