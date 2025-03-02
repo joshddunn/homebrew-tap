@@ -8,6 +8,6 @@ class Mux < Formula
 
   def install
     bin.install "mux"
-    # generate_completions_from_executable(bin/"mux", "completion")
+    generate_completions_from_executable(bin/"mux", "completion", shells: [:zsh])
   end
 end
