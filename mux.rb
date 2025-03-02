@@ -1,6 +1,6 @@
 class Mux < Formula
   version "v0.1.5"
-  sha256 "ba9ce6bc0c66dff00be74902105e11cef0110b735b80b002bf6ca2214906930b"
+  sha256 "a338317fbb15a8e01871a915969125abf59f984a248e48154ba833e5c6b42a16"
 
   url "https://github.com/joshddunn/mux/releases/download/#{version}/mux"
   desc "Manage tmux sessions"
