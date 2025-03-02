@@ -8,12 +8,12 @@ class Mux < Formula
   depends_on "go" => :build
 
   def install
-    bin.install "mux"
     ldflags = %W[
       -X main.version=#{version}
     ]
 
     system "go", "build", "-o", "mux", *std_go_args(ldflags: ldflags)
+
     generate_completions_from_executable(bin/"mux", "completion", shells: [:zsh])
   end
 end
